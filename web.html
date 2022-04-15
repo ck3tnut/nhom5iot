@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <title> Phòng làm việc</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: "Open Sans", sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color :#777;
+        }
+        .headline{
+            text-align: center;
+            margin: 30px 60px;
+        }
+        #wrapper{
+            max-width:1170px;
+            margin:0 auto;
+        }
+        h3{
+            font-size:20px;
+            color: #111;
+            border: 3px solid;
+            border-image:linear-gradient(45deg,green,yellow,red, blue) 10;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            display: inline-block;
+            font-weight: 600;
+        }
+        ul.products{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+        }
+        ul.products li{
+            flex-basis: 25%;
+            padding-left: 15px;
+            padding-right: 15px;
+            box-sizing: border-box;
+            margin-bottom: 30px;
+        }
+        ul.products li img{
+            max-width: 80%;
+            height: auto;
+        }
+        ul.buttons{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+        }
+        ul.buttons li{
+            flex-basis: 25%;
+            padding-left: 60px;
+            padding-right: 50px;
+            box-sizing: border-box;
+            margin-bottom: 100px;
+        }
+        ul.text{
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-self: space-between;
+            vertical-align: top;
+            text-align: center; 
+            color: #000;
+
+        }
+        ul.text li{
+            flex-basis: 20%;
+            padding-left: 120px;
+            padding-right: 00px;
+            margin-bottom: 10px;
+        }
+    </style>
+	<div id="wrapper">
+        <div class="headline"> 
+            <h3> Nhóm 5 - Phòng làm việc</h3>
+        </div>
+        <ul class="text">
+            <li>
+                <h2 class="text-item"> Nhiệt độ: <span id = "nhietdo">00</span> °C</h2>
+            </li>
+            <li>
+                <h2 class="text-item">Độ ẩm: <span id = "doam">00</span> %</h2>
+            </li>
+            <li>
+                <h2 class="text-item">Ánh sáng: <span id = "anhsang">00</span> </h2>
+            </li>
+        </ul>
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="quatId_01" src="./img/fanon.png">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"></a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="bomId_01" src="./img/pumpon.png">
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="treeId_01"src="./img/treeon.png" >
+                        </a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img id="tableId_01"src="./img/tableon.png">
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="buttons">
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:40px;width:60px" id = "btnOnId_01">ON</button>
+			        <button style="font-size :15px; height:40px;width:60px" id = "btnOffId_01">OFF</button>
+                </div>
+            </li>
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:40px;width:60px" id = "btnOnId_02">ON</button>
+			        <button style="font-size :15px; height:40px;width:60px" id = "btnOffId_02">OFF</button>
+                </div>
+            </li>
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:40px;width:60px" id = "btnOnId_03">ON</button>
+			        <button style="font-size :15px; height:40px;width:60px" id = "btnOffId_03">OFF</button>
+                </div>
+            </li>
+            <li>
+                <div class="button-item">
+                    <button style="font-size :15px; height:40px;width:60px" id = "btnOnId_04">ON</button>
+			        <button style="font-size :15px; height:40px;width:60px" id = "btnOffId_04">OFF</button>
+                </div>
+            </li> 
+        </ul>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+	<script src ="web.js"></script>
+</body>
+</html>
